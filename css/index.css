@@ -1,0 +1,357 @@
+/*CSS común entre todos los html, concretamente en el header*/
+
+@font-face {
+    font-family: Mulish;
+    src: url(../fuentes/Mulish-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Protest;
+    src: url(../fuentes/ProtestStrike-Regular.ttf);
+}
+
+* {
+    margin: 0cm;
+}
+
+.header_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: Mulish;
+    position: fixed;
+    float: left;
+    width: 100%;             
+    overflow: hidden;
+    margin-right: 0.20cm;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.logonetrna {
+    padding: 1px;
+    height: 100px;
+    width: 150px;
+    float: right;
+    margin-right: 4cm;
+    margin-left: 0.2cm;
+    transition: 0.4s;
+    transition-duration: 0.2s;
+}
+
+.logonetrna:hover {
+    height: 140px;
+    width: 190px;
+    margin-right: 3.3cm;
+}
+
+.buscar {
+    background-color: #ffffff;
+    float: right;
+    padding: 8px;
+    border-radius: 15px;
+    font-family: Mulish;
+    font-weight: 650;
+    outline: none;
+    line-height: 1.5;
+    transition-duration: 0.4s;
+    margin-right: 0.2cm;
+    margin-left: 5cm;
+}
+
+.buscar:hover {
+    box-shadow: 0px 5px 5px 0px yellow;
+}
+
+.boton-buscar {
+    background-color: rgb(0, 183, 255);
+    padding: 10px;
+    border-radius: 15px;
+    float: inline-end;
+    transition: 0.4s;
+    transition-duration: 0.2s;
+    font-weight: 700;
+}
+
+.boton-buscar:hover {
+    background-color: greenyellow;
+    box-shadow: 0px 5px 5px yellow;
+}
+
+body .h1 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 0.4s;
+    transition-duration: 0.2s;
+}
+
+body .h1 a:hover {
+    transition: 0.4s;
+    border-color: red;
+    color: rgb(255, 179, 0);
+    font-weight:bolder;
+    background-color: red;
+    box-shadow: 5px 5px 0px 0px;
+}
+
+
+.h1 {
+    float: left;
+}
+
+.h1 a {
+    display: block;
+    text-align: center;
+    padding: 1.2em 1.2em;
+    text-decoration: none;
+    margin-left: 0.6cm;
+}
+
+
+
+/*CSS de index*/
+
+.lista_principio {
+    margin-bottom: none;
+    height: 2.7cm;
+    width: auto;
+    font-weight: 150cm;
+    padding-bottom: 0.25cm;
+}
+
+.textoinicial {
+    color: white;
+    font-size: 50px;
+    font-family: Protest;
+    text-align: center;
+}
+
+.textoinicialtitulo {
+    text-shadow: 0px 0px 50px rgb(255, 255, 255)
+}
+.textoinicialsegundotitulo {
+    font-family: Mulish;
+    text-shadow: 0px 0px 20px blueviolet;
+}
+
+.video {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-height: 110%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1000;
+    overflow: hidden;;
+}
+
+.carrusel_fotos {
+    font-size: larger;
+    padding-left: 0.3cm;
+    background-color: lightyellow;
+    padding-bottom: 2cm;
+}
+
+.titulo_cuerpo_pagina {
+    padding: 2cm;
+    color: rgb(6, 212, 212);
+    font-family: Mulish;
+}
+
+.slider {
+    width: 95%;
+    margin: auto;
+    padding-left: 2cm;
+    overflow: hidden;
+    background-color: rgb(96, 182, 182);
+    border-radius: 30px;
+}
+
+.slider ul {
+    display: flex;
+    padding-left: 2cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    width: 625%;
+
+    animation: fafa 20s infinite ease;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 65%;
+}
+
+@keyframes fafa {
+    3% {margin-left: 10%;}
+    13% {margin-left: 10%;}
+
+    17% {margin-left: -94%;}
+    27% {margin-left: -94%;}
+
+    34% {margin-left: -198%;}
+    44% {margin-left: -198%;}
+
+    51% {margin-left: -302%;}
+    61% {margin-left: -302%;}
+
+    68% {margin-left: -407%;}
+    78% {margin-left: -407%;}
+
+    85% {margin-left: -511%;}
+    95% {margin-left: -511%;}
+}
+
+.servicios_empresa {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-family: Mulish;
+    background-color: rgb(1, 100, 107);
+    padding-bottom: 2cm;
+}
+
+.lista_servicios {
+    padding-left: 3cm;
+    list-style-type: none;
+}
+
+.li_1 {
+    padding-bottom: 2cm;
+}
+
+.proyectos_realizados {
+    font-size: larger;
+    font-family: Mulish;
+    background-color: rgb(232, 232, 232);
+    padding-bottom: 2cm;
+}
+
+.proyectos_ejemplos {
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+
+.proyecto_petit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5cm;
+    padding-bottom: 1.5cm;
+    background-color: lightgoldenrodyellow;
+    border-radius: 100px;
+}
+
+.proyecto_mediano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5cm;
+    padding-bottom: 1.5cm;
+    background-color: rgb(195, 169, 169);
+    border-radius: 100px;
+}
+
+.proyecto_grande {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5cm;
+    background-color: lightcyan;
+    padding-bottom: 1.5cm;
+    border-radius: 100px;
+}
+
+.imagen_explicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+
+.explicacion_caso {
+    padding-left: 2cm;
+    color: brown;
+}
+
+.imagen_desdearriba {
+    width: 500px;
+}
+
+.imagen_estructurared {
+    width: 650px;
+}
+
+
+/*---------------CSS del Footer---------------*/
+
+
+.redes_sociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 1cm;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.instagram {
+    height: 100px;
+    width: 100px;
+}
+
+.gmail {
+    height: 100px;
+    width: 100px;
+}
+
+.mastodon {
+    height: 100px;
+    width: 100px;
+}
+
+.footer {
+    display: flex;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    justify-content: space-around;
+    font-family: Mulish;
+}
+
+.footer1 {
+    width: auto;
+}
+
+.footer1 > img {
+    height: 150px;
+}
+
+.footercopyright {
+    display: flex;
+    justify-content: center;
+    padding: 1cm;
+    font-family: Mulish;
+}
